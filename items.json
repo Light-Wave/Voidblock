@@ -1,0 +1,19 @@
+[
+  {
+    "id": "starterkit_items",
+    "type": "item_group",
+    "//": "What you'll find in your starter kit.",
+    "subtype": "collection",
+    "entries": [
+      { "item": "sharp_rock", "count": 1 },
+      { "item": "stick_long", "count": 3 }
+    ]
+  },
+  {
+    "id": "si_trash_heap",
+    "type": "item_group",
+    "//": "What you'll find in your starter kit.",
+    "subtype": "collection",
+    "entries": [ { "group": "trash_forest", "count": [ 80, 100 ] } ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "type": "region_overlay",
+    "regions": [ "all" ],
+    "forest_mapgen_settings": {
+      "forest_thick": {
+        "//": "Makes it so terrain is considered forests for adjecency bonuses used to calculate how many trees to place",
+        "terrains": [
+          "sky_island_edge",
+          "sky_island_corner",
+          "sky_island_fake_forest",
+          "sky_island_corner_NW",
+          "sky_island_edge_N",
+          "sky_island_corner_NE"
+        ]
+      },
+      "forest": {
+        "terrains": [
+          "sky_island_core",
+          "sky_island_edge_E"
+        ]
+      },
+      "forest_water": {
+        "terrains": [
+          "sky_island_corner_SE"
+        ]
+      }
+    }
+  }
+]
