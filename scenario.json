@@ -9,5 +9,11 @@
     "start_name": "Warper",
     "allowed_locs": [ "sloc_skyisland" ],
     "eoc": [ "scenario_warp_begins" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_skyisland",
+    "name": "Sky Island",
+    "terrain": [ "sky_island_core_voidblock" ]
   }
 ]

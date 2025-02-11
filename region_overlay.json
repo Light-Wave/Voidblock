@@ -16,13 +16,16 @@
       },
       "forest": {
         "terrains": [
-          "sky_island_core",
-          "sky_island_edge_E"
+          "sky_island_core_voidblock",
+          "sky_island_edge_E",
+          "sky_island_edge_W"
         ]
       },
       "forest_water": {
         "terrains": [
-          "sky_island_corner_SE"
+          "sky_island_corner_SE",
+          "sky_island_edge_S",
+          "sky_island_corner_SW"
         ]
       }
     }

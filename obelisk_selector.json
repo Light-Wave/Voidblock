@@ -4,15 +4,37 @@
     "id": "EOC_warp_choose_locale",
     "effect": [
       {
-        "run_eoc_selector": [ "EOC_Field_Loc_Warp", "EOC_raidcancel" ],
-        "names": [ "Target: Field", "Cancel" ],
-        "keys": [ "1", "2" ],
+        "run_eoc_selector": [ "EOC_Field_Loc_Warp", "EOC_Forge_Loc_Warp", "EOC_raidcancel" ],
+        "names": [ "Target: Field", "Target: The Forge of Wonders", "Cancel" ],
+        "keys": [ "1", "2", "3" ],
         "title": "Select a Starting Location",
         "descriptions": [
           "Arrive in a barren field.",
+          "Arrive at the forge of wonders, where you could do some shopping.",
           "Stay on the island for now."
         ]
       }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_Forge_Loc_Warp",
+    "effect": [
+      {
+        "u_location_variable": { "global_val": "OM_missionspot" },
+        "target_params": {
+          "om_terrain": "forge_x2y2z1",
+          "om_terrain_match_type": "CONTAINS",
+          "search_range": 1200,
+          "min_distance": 5,
+          "reveal_radius": { "global_val": "var", "var_name": "scoutingdistancelanding", "default": 0 },
+          "z": 4,
+          "random": true
+        },
+        "terrain": "t_magiconc_floor",
+        "target_max_radius": 20
+      },
+      { "run_eocs": [ "EOC_initiate_randomport" ] }
     ]
   }
 ]
