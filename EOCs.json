@@ -14,7 +14,7 @@
       },
       {
         "u_spawn_item": "warptoken_material",
-        "count": { "global_val": "var", "var_name": "owed_material_tokens", "default": 50 }
+        "count": { "global_val": "owed_material_tokens", "default": 50 }
       },
       { "math": [ "u_val('exp') += owed_material_tokens" ] }
     ]

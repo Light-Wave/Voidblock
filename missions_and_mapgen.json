@@ -9,7 +9,7 @@
       {
         "u_add_effect": "warpcloak",
         "intensity": 1,
-        "duration": { "global_val": "var", "var_name": "invistime", "default": "60 s" }
+        "duration": { "global_val": "invistime", "default": "60 s" }
       },
       {
         "u_message": "You're still materializing and not fully visible yet.  In about <global_val:invistime> seconds, the world will be able to see you, so if you were warped into danger, now's your chance to get to cover.",
