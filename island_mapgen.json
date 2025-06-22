@@ -56,7 +56,7 @@
         "           ,V,          "
       ],
       "terrain": { ".": "t_concrete", "V": "t_concrete", "X": "t_grass", ",": "t_grass", " ": [ [ "t_region_groundcover", 30 ], [ "t_grass_long", 6 ], [ "t_region_shrub_forest", 3 ], [ "t_region_tree", 1 ] ] },
-      "place_zones": [ { "type": "ZONE_START_POINT", "faction": "your_followers", "x": [ 10, 14 ], "y": [ 16, 20 ] } ],
+      "place_zones": [ { "type": "ZONE_START_POINT", "faction": "your_followers", "x": [ 10, 14 ], "y": [ 15, 19 ] } ],
       "furniture": { "X": "f_exitportal", "V": "f_islandstatue", " ": [ [ "f_null", 10 ], [ "f_region_plain", 1 ], [ "f_region_weed", 1 ] ] },
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "place_item": [  ]

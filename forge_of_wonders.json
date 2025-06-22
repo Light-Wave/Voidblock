@@ -30,7 +30,7 @@
       { "point": [ 0, 2, 4 ], "overmap": "forge_x0y2z1_north" },
       { "point": [ 1, 2, 4 ], "overmap": "forge_x1y2z1_north" },
       {
-        "point": [ 2, 2, 0 ],
+        "point": [ 2, 2, 4 ],
         "overmap": "forge_x2y2z1_north",
         "camp": "forge_lords",
         "camp_name": "Forge of Wonders"
