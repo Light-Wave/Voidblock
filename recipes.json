@@ -10,7 +10,7 @@
     "time": "1 h",
     "autolearn": false,
     "reversible": false,
-    "flags": [ "BLIND_EASY" ],
+    "flags": [ "SECRET", "BLIND_EASY" ],
     "tools": [ [ [ "fakeitem_statue", -1 ] ] ],
     "components": [
       [ [ "warptoken", 20 ] ],
@@ -34,7 +34,7 @@
     "time": "1 h",
     "autolearn": false,
     "reversible": false,
-    "flags": [ "BLIND_EASY" ],
+    "flags": [ "SECRET", "BLIND_EASY" ],
     "tools": [ [ [ "fakeitem_statue", -1 ] ] ],
     "components": [
       [ [ "warptoken", 40 ] ],
