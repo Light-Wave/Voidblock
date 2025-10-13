@@ -22,12 +22,18 @@
   },
   {
     "type": "overmap_terrain",
-    "id": [
-      "sky_island_subcorner",
-      "sky_island_subcore",
-      "sky_island_subedge",
-      "sky_island_fake_forest"
-    ],
+    "id": [ "sky_island_subcorner_NW", "sky_island_subedge_N", "sky_island_subcorner_NE", "sky_island_subedge_W" ],
+    "name": "sky island",
+    "sym": "#",
+    "color": "brown",
+    "looks_like": "solid rock",
+    "mondensity": 0,
+    "see_cost": "opaque",
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "sky_island_subcorner", "sky_island_subcore", "sky_island_subedge", "sky_island_fake_forest" ],
     "name": "sky island",
     "sym": "#",
     "color": "c_white",
@@ -66,9 +72,19 @@
         "           ,,,          ",
         "           ,V,          "
       ],
-      "terrain": { ".": "t_concrete", "V": "t_concrete", "X": "t_grass", ",": "t_grass", " ": [ [ "t_region_groundcover", 30 ], [ "t_grass_long", 6 ], [ "t_region_shrub_forest", 3 ], [ "t_region_tree", 1 ] ] },
+      "terrain": {
+        ".": "t_concrete",
+        "V": "t_concrete",
+        "X": "t_grass",
+        ",": "t_grass",
+        " ": [ [ "t_region_groundcover", 30 ], [ "t_grass_long", 6 ], [ "t_region_shrub_forest", 3 ], [ "t_region_tree", 1 ] ]
+      },
       "place_zones": [ { "type": "ZONE_START_POINT", "faction": "your_followers", "x": [ 10, 14 ], "y": [ 15, 19 ] } ],
-      "furniture": { "X": "f_exitportal", "V": "f_islandstatue", " ": [ [ "f_null", 10 ], [ "f_region_plain", 1 ], [ "f_region_weed", 1 ] ] },
+      "furniture": {
+        "X": "f_exitportal",
+        "V": "f_islandstatue",
+        " ": [ [ "f_null", 10 ], [ "f_region_plain", 1 ], [ "f_region_weed", 1 ] ]
+      },
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "place_item": [  ]
     }
@@ -176,7 +192,12 @@
         ",.                      "
       ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
-      "terrain": { ".": "t_fake_air", ",": "t_open_air", "X": "t_grass", " ": [ [ "t_region_groundcover", 30 ], [ "t_grass_long", 6 ], [ "t_region_shrub_forest", 3 ], [ "t_region_tree", 1 ] ] },
+      "terrain": {
+        ".": "t_fake_air",
+        ",": "t_open_air",
+        "X": "t_grass",
+        " ": [ [ "t_region_groundcover", 30 ], [ "t_grass_long", 6 ], [ "t_region_shrub_forest", 3 ], [ "t_region_tree", 1 ] ]
+      },
       "furniture": { " ": [ [ "f_null", 10 ], [ "f_region_plain", 1 ], [ "f_region_weed", 1 ] ] },
       "palettes": [ "meadow_palette" ]
     }
@@ -476,31 +497,39 @@
       "fill_ter": "t_fake_air",
       "rows": [
         ",,,,,,,,,,,,,,,,,,,,,,,,",
-        ",,,,,...................",
-        ",,,...XXXXXXXXXXXXXXXXXX",
-        ",,..XXX                 ",
-        ",,.XX                   ",
-        ",..X                    ",
-        ",.XX                    ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     ",
-        ",.X                     "
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,XXXXXXXXXXXXXXXXXX",
+        ",,,,XXX.................",
+        ",,,XX.........P.PP......",
+        ",,,X.........@@@  P.....",
+        ",,XX...PP.P.P@P.. :::...",
+        ",,X...@@@@@P......P.:P..",
+        ",,X..@@PP.@:: .PPP..:P..",
+        ",,X..PP. : P@.:: PP. ...",
+        ",,X.... PP.PP@PP@   ....",
+        ",,X...@::: .PP.PPPP:....",
+        ",,X.P@@:.P.::@@PPPP:....",
+        ",,X..@ .P@@.@@. P@P ....",
+        ",,X...:P.@  @...@ P ....",
+        ",,X...:PP  . @:::.:.:...",
+        ",,X...@ @. PPP@. @:     ",
+        ",,X...@ :PP PP@..@P :   ",
+        ",,X...P@: P......@......",
+        ",,X.....P:: :...@P@PPP..",
+        ",,X......PP . @@..P@@P..",
+        ",,X.......P. @.....PPPP.",
+        ",,X.......... ..........",
+        ",,X.......... .........."
       ],
-      "terrain": { " ": "t_rock", ".": "t_open_air", ",": "t_open_air", "X": "t_warprock" }
+      "palettes": [ "triffid" ],
+      "terrain": {
+        ".": "t_rock",
+        " ": "t_dirt_underground",
+        ",": "t_open_air",
+        "X": "t_warprock",
+        ":": "t_root_floor",
+        "@": "t_root_floor"
+      }
     }
   },
   {
@@ -568,7 +597,106 @@
         ".....         ..........",
         "........................"
       ],
-      "terrain": { " ": "t_rock", ".": "t_dirt_underground", ",": "t_open_air", "X": "t_warprock" }
+      "terrain": { ".": "t_rock", " ": "t_dirt_underground", ",": "t_open_air", "X": "t_warprock" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": "sky_island_subedge_W",
+    "object": {
+      "fill_ter": "t_fake_air",
+      "rows": [
+        ",,X.......... ..........",
+        ",,X........... .........",
+        ",,X........... .........",
+        ",,X..........:..........",
+        ",,X.........:::.........",
+        ",,X........:::::........",
+        ",,X.....________:::.....",
+        ",.X....._5:__::_:5:.....",
+        ",,X....._____5:__::.....",
+        ",,X....::__:_::___::....",
+        ",,X...::__:________::...",
+        ",,X..::___5_:6__5__:::..",
+        ",,X...::__:____:::_::...",
+        ",,X...._____::::__::....",
+        ",,X....._::_:5:___:.....",
+        ",,X.....:5:_____:5:.....",
+        ",,X.....:::__:___::.....",
+        ",,X........:___:........",
+        ",,X.........:::.........",
+        ",,X..........:..........",
+        ",,X......... ...........",
+        ",,X......... ...........",
+        ",,X.......... ..........",
+        ",,X.......... .........."
+      ],
+      "terrain": {
+        ".": "t_rock",
+        " ": "t_dirt_underground",
+        ",": "t_open_air",
+        "X": "t_warprock",
+        ":": [ [ "t_rock_floor", 50 ], [ "t_moss_underground", 20 ], [ "t_horn_moss", 5 ] ],
+        "_": [ [ "t_rock_floor", 50 ], [ "t_moss_underground", 20 ], [ "t_horn_moss", 5 ] ],
+        "5": "t_rock_floor",
+        "6": "t_rock_floor"
+      },
+      "furniture": {
+        "5": [ "f_huge_mana_crystal" ],
+        "6": [ "f_glow_boulder" ],
+        "_": [ [ "f_null", 300 ], [ "f_glowing_mushroom", 5 ], [ "f_funnelcap", 5 ], [ "f_sojourners_palm", 5 ] ]
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": "sky_island_subecenter",
+    "object": {
+      "fill_ter": "t_fake_air",
+      "rows": [
+        "........................",
+        "........................",
+        "........................",
+        "..XX:::::::::::::::::::.",
+        ".....B.............G..:.",
+        "....::::.::::XX.XX:::.:.",
+        "....::b:G::::X:.XX:::.:.",
+        "....::::.:::::X.......:.",
+        ".........::::::.:::r:.:.",
+        ".......:.::::::R:::::.:.",
+        ".......:B::::::.:::::.:.",
+        ".......:.::::::.:::::.:.",
+        ".......:.....R......G.R.",
+        "..::::.:::W:::::::.::::.",
+        "..::::.:r:W:::::::.::::.",
+        "..::::.:::W:::::::.::::.",
+        "..::::.......B.....:::: ",
+        "..w:::G::::::::.::.:::: ",
+        "..::::.:::::::g.T:B:lg:.",
+        "..::::..........::......",
+        ". ::::..................",
+        "   .....................",
+        "  ......................",
+        " ......................."
+      ],
+      "terrain": {
+        ".": "t_rock",
+        " ": "t_dirt_underground",
+        ":": "t_rock_floor",
+        "R": "t_rock_floor",
+        "G": "t_rock_floor",
+        "B": "t_rock_floor",
+        "r": "t_rock_floor",
+        "g": "t_rock_floor",
+        "b": "t_rock_floor",
+        "l": "t_rock_floor",
+        "w": "t_rock_floor"
+      },
+      "furniture": {
+        "5": [ "f_huge_mana_crystal" ],
+        "6": [ "f_glow_boulder" ],
+        "_": [ [ "f_null", 300 ], [ "f_glowing_mushroom", 5 ], [ "f_funnelcap", 5 ], [ "f_sojourners_palm", 5 ] ]
+      }
     }
   },
   {
@@ -619,36 +747,35 @@
       { "point": [ 1, -1, 7 ], "overmap": "sky_island_corner_NE" },
       { "point": [ 1, 0, 7 ], "overmap": "sky_island_edge_E" },
       { "point": [ 1, 1, 7 ], "overmap": "sky_island_corner_SE" },
-
       { "point": [ -2, -2, 7 ], "overmap": "sky_island_fake_forest_north" },
       { "point": [ -2, -1, 7 ], "overmap": "sky_island_fake_forest_north" },
       { "point": [ -2, 0, 7 ], "overmap": "sky_island_fake_forest_north" },
       { "point": [ -2, 1, 7 ], "overmap": "sky_island_fake_forest_north" },
       { "point": [ -2, 2, 7 ], "overmap": "sky_island_fake_forest_north" },
-
       { "point": [ 2, -2, 7 ], "overmap": "sky_island_fake_forest_north" },
       { "point": [ 2, -1, 7 ], "overmap": "sky_island_fake_forest_north" },
       { "point": [ 2, 0, 7 ], "overmap": "sky_island_fake_forest_north" },
       { "point": [ 2, 1, 7 ], "overmap": "sky_island_fake_forest_north" },
       { "point": [ 2, 2, 7 ], "overmap": "sky_island_fake_forest_north" },
-      
       { "point": [ -1, -2, 7 ], "overmap": "sky_island_fake_forest_north" },
       { "point": [ 0, -2, 7 ], "overmap": "sky_island_fake_forest_north" },
       { "point": [ 1, -2, 7 ], "overmap": "sky_island_fake_forest_north" },
-      
       { "point": [ -1, 2, 7 ], "overmap": "sky_island_fake_forest_north" },
       { "point": [ 0, 2, 7 ], "overmap": "sky_island_fake_forest_north" },
       { "point": [ 1, 2, 7 ], "overmap": "sky_island_fake_forest_north" },
-
-      { "point": [ 0, 0, 6 ], "overmap": "sky_island_subcore_north" },
-      { "point": [ -1, -1, 6 ], "overmap": "sky_island_subcorner_north" },
-      { "point": [ -1, 0, 6 ], "overmap": "sky_island_subedge_west" },
-      { "point": [ -1, 1, 6 ], "overmap": "sky_island_subcorner_west" },
-      { "point": [ 0, -1, 6 ], "overmap": "sky_island_subedge_north" },
-      { "point": [ 0, 1, 6 ], "overmap": "sky_island_subedge_south" },
-      { "point": [ 1, -1, 6 ], "overmap": "sky_island_subcorner_east" },
-      { "point": [ 1, 0, 6 ], "overmap": "sky_island_subedge_east" },
-      { "point": [ 1, 1, 6 ], "overmap": "sky_island_subcorner_south" },
+      { "point": [ 1, -1, 6 ], "overmap": "sky_island_subcorner_NE" },
+      { "point": [ 0, -1, 6 ], "overmap": "sky_island_subedge_N" },
+      { "point": [ -1, -1, 6 ], "overmap": "sky_island_subcorner_NW" },
+      { "point": [ -1, 0, 6 ], "overmap": "sky_island_subedge_W" },
+      { "point": [ 0, 0, 5 ], "overmap": "sky_island_subcore_north" },
+      { "point": [ -1, -1, 5 ], "overmap": "sky_island_subcorner_north" },
+      { "point": [ -1, 0, 5 ], "overmap": "sky_island_subedge_west" },
+      { "point": [ -1, 1, 5 ], "overmap": "sky_island_subcorner_west" },
+      { "point": [ 0, -1, 5 ], "overmap": "sky_island_subedge_north" },
+      { "point": [ 0, 1, 5 ], "overmap": "sky_island_subedge_south" },
+      { "point": [ 1, -1, 5 ], "overmap": "sky_island_subcorner_east" },
+      { "point": [ 1, 0, 5 ], "overmap": "sky_island_subedge_east" },
+      { "point": [ 1, 1, 5 ], "overmap": "sky_island_subcorner_south" },
       { "point": [ -4, -4, -10 ], "overmap": "sky_island_subcore_north" },
       { "point": [ -3, -4, -10 ], "overmap": "sky_island_subcore_north" },
       { "point": [ -2, -4, -10 ], "overmap": "sky_island_subcore_north" },
