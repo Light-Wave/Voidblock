@@ -1,7 +1,7 @@
 [
   {
     "type": "palette",
-    "id": "innavoid_underground",
+    "id": "voidblock_underground",
     "terrain": {
       ".": "t_rock",
       " ": "t_dirt_underground",
@@ -22,7 +22,11 @@
       "L": "t_rock_aluminum",
       "T": "t_rock_cassiterite",
       "P": "t_rock_galena",
-      "I": "t_rock_hematite"
+      "I": "t_rock_hematite",
+      "o": "t_dirt_underground",
+      "0": "t_dirt_underground",
+      "O": "t_dirt_underground",
+      "x": "t_dirt_underground"
     },
     "furniture": { "o": "f_boulder_small", "0": "f_boulder_medium", "O": "f_boulder_large", "x": "f_rubble_rock" }
   }
