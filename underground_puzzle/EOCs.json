@@ -1,0 +1,73 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_voidblock_button_yellow",
+    "condition": {
+      "and": [
+        { "not": [ { "compare_string": [ { "u_val": "voidblock_recent_button" }, "yellow" ] } ] },
+        { "not": [ { "compare_string": [ { "u_val": "voidblock_old_button" }, "yellow" ] } ] }
+      ]
+    },
+    "effect": [
+      { "effect": { "run_eocs": [ "EOC_voidblock_raise_walls" ] } },
+      { "u_transform_radius": 20, "ter_furn_transform": "voidblock_lower_yellow" },
+      { "u_add_var": "voidblock_recent_button", "value": "yellow" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_voidblock_button_cyan",
+    "condition": {
+      "and": [
+        { "not": [ { "compare_string": [ { "u_val": "voidblock_recent_button" }, "cyan" ] } ] },
+        { "not": [ { "compare_string": [ { "u_val": "voidblock_old_button" }, "cyan" ] } ] }
+      ]
+    },
+    "effect": [
+      { "effect": { "run_eocs": [ "EOC_voidblock_raise_walls" ] } },
+      { "u_transform_radius": 20, "ter_furn_transform": "voidblock_lower_cyan" },
+      { "u_add_var": "voidblock_recent_button", "value": "cyan" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_voidblock_button_purple",
+    "condition": {
+      "and": [
+        { "not": [ { "compare_string": [ { "u_val": "voidblock_recent_button" }, "purple" ] } ] },
+        { "not": [ { "compare_string": [ { "u_val": "voidblock_old_button" }, "purple" ] } ] }
+      ]
+    },
+    "effect": [
+      { "effect": { "run_eocs": [ "EOC_voidblock_raise_walls" ] } },
+      { "u_transform_radius": 20, "ter_furn_transform": "voidblock_lower_purple" },
+      { "u_add_var": "voidblock_recent_button", "value": "purple" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_voidblock_raise_walls",
+    "effect": [
+      {
+        "run_eocs": [
+          {
+            "id": "EOC_voidblock_raise_yellow_check",
+            "condition": { "compare_string": [ { "u_val": "voidblock_old_button" }, "yellow" ] },
+            "effect": { "u_transform_radius": 20, "ter_furn_transform": "voidblock_raise_yellow" }
+          },
+          {
+            "id": "EOC_voidblock_raise_cyan_check",
+            "condition": { "compare_string": [ { "u_val": "voidblock_old_button" }, "cyan" ] },
+            "effect": { "u_transform_radius": 20, "ter_furn_transform": "voidblock_raise_cyan" }
+          },
+          {
+            "id": "EOC_voidblock_raise_purple_check",
+            "condition": { "compare_string": [ { "u_val": "voidblock_old_button" }, "purple" ] },
+            "effect": { "u_transform_radius": 20, "ter_furn_transform": "voidblock_raise_purple" }
+          }
+        ]
+      },
+      { "copy_var": { "u_val": "voidblock_recent_button" }, "target_var": { "u_val": "voidblock_old_button" } }
+    ]
+  }
+]
