@@ -26,7 +26,9 @@
       "o": "t_dirt_underground",
       "0": "t_dirt_underground",
       "O": "t_dirt_underground",
-      "x": "t_dirt_underground"
+      "x": "t_dirt_underground",
+      ">": "t_slope_up",
+      "<": "t_slope_down"
     },
     "furniture": { "o": "f_boulder_small", "0": "f_boulder_medium", "O": "f_boulder_large", "x": "f_rubble_rock" }
   }
