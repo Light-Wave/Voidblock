@@ -110,7 +110,7 @@ SKYISLAND_UPGRADE_rankup1 Requires you to have fully mastered the neolithic era,
 
 #TODO before the mod gets officially released
 
-- Find a better name for the mod. Innavoid? Sky Grove? Skywoods? In the Sky? Fey Realm? Wood Between the Worlds?
+- Find a better name for the mod. Innavoid? Sky Grove? Skywoods? In the Sky? Fey Realm? Wood Between the Worlds? The Woods Between?
 - Modify json/ui/zenfs/mod_SI.json
 - Modify mods/Xedra_Evolved/mod_interactions/skyisland/paraclesian_eocs.json, or add my own mod folder
 - Possibly change EOC_safely_landed in Sky_Island

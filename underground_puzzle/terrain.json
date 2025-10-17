@@ -35,8 +35,8 @@
   {
     "type": "terrain",
     "id": "t_switch_yellow",
-    "name": "yellow switch",
-    "description": "A yellow switch.  Should you activate it?",
+    "name": "yellow button",
+    "description": "A yellow button.  Should you press it?",
     "symbol": "6",
     "color": "yellow",
     "move_cost": 0,
@@ -47,8 +47,8 @@
   {
     "type": "terrain",
     "id": "t_switch_cyan",
-    "name": "cyan switch",
-    "description": "A cyan switch.  Should you activate it?",
+    "name": "cyan button",
+    "description": "A cyan button.  Should you press it?",
     "symbol": "6",
     "color": "cyan",
     "move_cost": 0,
@@ -59,13 +59,37 @@
   {
     "type": "terrain",
     "id": "t_switch_purple",
-    "name": "purple switch",
-    "description": "A purple switch.  Should you activate it?",
+    "name": "purple button",
+    "description": "A purple button.  Should you press it?",
     "symbol": "6",
     "color": "magenta",
     "move_cost": 0,
     "looks_like": "t_switch_rb",
     "flags": [ "TRANSPARENT", "PERMEABLE" ],
     "examine_action": { "type": "effect_on_condition", "effect_on_conditions": [ "EOC_voidblock_button_purple" ] }
+  },
+  {
+    "type": "terrain",
+    "id": "t_switch_black",
+    "name": "black button",
+    "description": "A black button.  Should you press it?",
+    "symbol": "6",
+    "color": "dark_gray",
+    "move_cost": 0,
+    "looks_like": "t_pedestal_wyrm",
+    "flags": [ "TRANSPARENT", "PERMEABLE" ],
+    "examine_action": { "type": "effect_on_condition", "effect_on_conditions": [ "EOC_voidblock_button_black" ] }
+  },
+  {
+    "type": "terrain",
+    "id": "t_switch_white",
+    "name": "white button",
+    "description": "A white button.  Should you press it?",
+    "symbol": "6",
+    "color": "white",
+    "move_cost": 0,
+    "looks_like": "t_pedestal_temple",
+    "flags": [ "TRANSPARENT", "PERMEABLE" ],
+    "examine_action": { "type": "effect_on_condition", "effect_on_conditions": [ "EOC_voidblock_button_white" ] }
   }
 ]
