@@ -22,6 +22,7 @@ This mod attempts to change Sky Block to be more Innawood-like. Your starting is
 - Give 25 exp for completing the Find the warp shards! quest (doesn't seem to work)
 - Removed underground bunker stuff (Building, fixing, items, quests) (You're meant to build your onw base, not have the island build it for you)
 - Got rid of the pond creation
+- Cave system
 
 # Reworked upgrades
 
@@ -103,7 +104,6 @@ SKYISLAND_UPGRADE_rankup1 Requires you to have fully mastered the neolithic era,
 
 #TODO
 
-- Cave system
 - Change quest craftables
 - Make magiclysm gatway thingies return you to the island instead
 - Change scenario starting gear
